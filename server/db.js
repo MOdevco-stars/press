@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 module.exports = function () {
-    mongoose.connect(process.env.MONGO)
+    mongoose.connect('mongodb+srv://mirsoonuzbsila001:1234modevco@cluster.7j5tcs3.mongodb.net/modevco')
     .then(() => {
         console.log('Mongo ishladi');
     }).catch((err) => {
